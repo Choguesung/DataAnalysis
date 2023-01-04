@@ -1,9 +1,5 @@
-# 데이터에 접근 할 수 있는 주소값
+# DataFrame 객체를 엑셀, csv, txt 형태의 파일로 저장 및 열기
 import pandas as pd
-
-lst = ['유재석','하하']
-
-print(lst[1])
 
 data = {
     '이름' : ['채치수', '정대만', '송태섭', '서태웅', '강백호', '변덕규', '황태산', '윤대협'],
@@ -18,30 +14,32 @@ data = {
 }
 
 df = pd.DataFrame(data,index=['1번','2번','3번','4번','5번','6번','7번','8번'])
-print(df.index)
-
-## 인덱스 이름 설정
-
 df.index.name='지원번호'
+
+## 저장하기
+## csv 파일로 저장
+df.to_csv('score.csv')
+
+# 인덱스 없이도 가능
+df.to_csv('score.csv',index=False)
+
+#텍스트 (.txt) 파일로 저장
+df.to_csv('score.txt',sep='\t')# tab으로 구분된 텍스트 파일?
+
+## 엑셀 파일로 저장
+##df.to_excel('score.xlsx')
+
+## csv파일 열기
+df=pd.read_csv('score.csv')
 print(df)
 
-# 인덱스 초기화 할 수도 있다
-df.reset_index(drop=True)
-#얘는 아직 반영이 안됨
+## 행 스킵
+df=pd.read_csv('score.csv',skiprows=1) # 1개 행 무시 (지정된 개수 만큼의 row를 건너 뛴대요)
 print(df)
 
-
-# 이러면 반영됨
-df.reset_index(drop=True,inplace=True)
+df=pd.read_csv('score.csv',skiprows=[1,3,5]) # 원하는 행 무시
 print(df)
 
-#Index 설정 (지정한 컬럼으로)
-
-df.set_index('이름',inplace=True)
+df=pd.read_csv('score.csv',nrows=4) # 지정된 개수 만큼의 row만 가져옴
 print(df)
 
-#Index 정렬
-#Index를 기준으로 오름차순, 내림차순 정렬
-
-df.sort_index(inplace=True)
-print(df)
