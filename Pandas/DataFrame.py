@@ -35,3 +35,5 @@ print(df)
 
 df = pd.DataFrame(data,columns=['이름','학교x`'])
 print(df)
+
+#11
