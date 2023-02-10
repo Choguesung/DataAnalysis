@@ -40,6 +40,7 @@ for i in lst[0]:
 
 x = np.arange(6)
 
+plt.title('world')
 plt.bar(x,population)
 plt.xticks(x,continent)
 
