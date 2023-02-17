@@ -45,3 +45,6 @@ plt.bar(x,population)
 plt.xticks(x,continent)
 
 plt.show()
+
+
+#gbgn
