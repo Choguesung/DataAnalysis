@@ -1,4 +1,4 @@
-# DataFrame 객체를 엑셀, csv, txt 형태의 파일로 저장 및 열기
+# DataFrame 객체를 엑셀, csvxx, txt 형태의 파일로 저장 및 열기
 import pandas as pd
 
 
