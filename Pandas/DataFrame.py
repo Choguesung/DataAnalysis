@@ -12,7 +12,7 @@ data = {
     'SW특기' : ['Python', 'Java', 'Javascript', '', '', 'C', 'PYTHON', 'C#']
 }
 
-#print(data['이름'])
+#print(data['이름'])11
 
 df = pd.DataFrame(data)
 
