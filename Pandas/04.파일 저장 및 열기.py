@@ -19,7 +19,7 @@ df = pd.DataFrame(data,index=['1번','2번','3번','4번','5번','6번','7번','
 df.index.name='지원번호'
 
 ## 저장하기
-## csv 파일로 저장
+## csv 파일로 저장1
 df.to_csv('score.csv')
 
 # 인덱스 없이도 가능
