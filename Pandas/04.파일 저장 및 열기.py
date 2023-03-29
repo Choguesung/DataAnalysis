@@ -28,6 +28,8 @@ df.to_csv('score.csv',index=False)
 #텍스트 (.txt) 파일로 저장
 df.to_csv('score.txt',sep='\t')# tab으로 구분된 텍스트 파일?
 
+df.to_excel('score.xlsx')
+
 ## 엑셀 파일로 저장
 ##df.to_excel('score.xlsx')
 
@@ -39,9 +41,5 @@ print(df)
 df=pd.read_csv('score.csv',skiprows=1) # 1개 행 무시 (지정된 개수 만큼의 row를 건너 뛴대요)
 print(df)
 
-df=pd.read_csv('score.csv',skiprows=[1,3,5]) # 원하는 행 무시
-print(df)
 
-df=pd.read_csv('score.csv',nrows=4) # 지정된 개수 만큼의 row만 가져옴
-print(df)
 

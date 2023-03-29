@@ -36,4 +36,8 @@ print(df)
 df = pd.DataFrame(data,columns=['이름','학교x`'])
 print(df)
 
+<<<<<<< Updated upstream
 #11
+=======
+
+>>>>>>> Stashed changes
