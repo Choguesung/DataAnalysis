@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 이미지 파일을 읽어들입니다.
-img = cv2.imread("airplane.jpg")
+img = cv2.imread("tiger.jpg")
 
 # 이미지를 벡터 형태로 변환합니다.
 vectorized = img.reshape((-1,3))
