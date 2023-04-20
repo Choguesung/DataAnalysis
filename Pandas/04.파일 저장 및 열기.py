@@ -26,7 +26,7 @@ df.to_csv('score.csv')
 df.to_csv('score.csv',index=False)
 
 #텍스트 (.txt) 파일로 저장
-df.to_csv('score.txt',sep='\t')# tab으로 구분된 텍스트 파일
+df.to_csv('score.txt',sep='\t')# tab으로 구분된 텍스트 파일1
 
 df.to_excel('score.xlsx')
 
