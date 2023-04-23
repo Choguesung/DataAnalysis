@@ -10,7 +10,7 @@ data = pd.read_csv("war_data.csv")
 X = data[["team1_war", "team2_war"]]
 y = data["team1_win_ratio"]
 
-# 데이터 분할
+# 데이터 분할 왜?
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # 모델 정의
