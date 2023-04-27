@@ -3,6 +3,7 @@ import tensorflow as tf
 from tensorflow import keras
 from sklearn.model_selection import train_test_split
 
+
 # 데이터 로드
 data = pd.read_csv("war_data.csv")
 

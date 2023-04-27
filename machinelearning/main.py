@@ -6,11 +6,11 @@ from sklearn.model_selection import train_test_split
 # 데이터 로드1
 data = pd.read_csv("war_data.csv")
 
-# 입력 데이터와 타겟 데이터로 분리
+# 입력 데이터와 타겟 데이터로 분리11
 X = data[["team1_war", "team2_war"]]
 y = data["team1_win_ratio"]
 
-# 데이터 분할 왜하지
+# 데이터 분할
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # 모델 정의
