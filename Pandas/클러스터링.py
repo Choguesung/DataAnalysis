@@ -8,7 +8,7 @@ img = cv2.imread("tiger.jpg")
 vectorized = img.reshape((-1,3))
 vectorized = np.float32(vectorized)
 
-# k-means 알고리즘을 실행합니다.
+# k-means 알고리즘을 실행합니다.1
 K = [2, 3, 5] # k 값을 설정합니다.
 
 for k in K:
