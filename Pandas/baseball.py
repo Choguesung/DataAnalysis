@@ -20,6 +20,6 @@ model.fit(X_train, y_train)
 # 검증용 데이터에 대해 예측을 수행합니다.
 y_pred = model.predict(X_test)
 
-# 정확도를 계산합니다.
+# 정확도를 계산합니다.1
 acc = accuracy_score(y_test, y_pred)
 print("Accuracy:", acc)
