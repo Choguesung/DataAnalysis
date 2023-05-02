@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 # 데이터 로드1
 data = pd.read_csv("war_data.csv")
 
-# 입력 데이터와 타겟 데이터로 분리11
+# 입력 데이터와 타겟 데이터로 분리
 X = data[["team1_war", "team2_war"]]
 y = data["team1_win_ratio"]
 
