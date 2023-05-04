@@ -4,7 +4,7 @@ df = pd.read_csv('score.csv')
 
 print(df)
 
-#DataFrame 확인
+#DataFrame 확인1
 #계산가능한 데이터에 대해 갯수, 평균, 표준편차, 최소/최대값 등의 정보를 보여줌11
 print(df.describe())
 
