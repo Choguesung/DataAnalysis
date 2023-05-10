@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
-# Read the image.
+# Read the image..
 img = Image.open("tiger.jpg")
 
 # Convert the image to the RGB color model.
