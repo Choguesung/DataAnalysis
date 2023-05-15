@@ -51,3 +51,5 @@ labels = labels.reshape(img.size[1], img.size[0])
 plt.imshow(labels)
 plt.axis("off")
 plt.show()
+
+
