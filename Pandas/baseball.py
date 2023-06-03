@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 # csv 파일을 읽어옵니다.
 df = pd.read_csv('baseball.csv')
 
-# 입력 데이터와 타깃 데이터를 분리합니다.
+# 입력 데이터와 타깃 데이터를 분리합니다.1
 X = df[['teamA_war1', 'teamA_war2', 'teamA_war3', 'teamA_war4', 'teamA_war5', 'teamA_war6', 'teamA_war7', 'teamA_war8', 'teamA_war9', 'teamA_war10', 'teamB_war1', 'teamB_war2', 'teamB_war3', 'teamB_war4', 'teamB_war5', 'teamB_war6', 'teamB_war7', 'teamB_war8', 'teamB_war9', 'teamB_war10']]
 y = df['teamA_win']
 
