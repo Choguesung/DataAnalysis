@@ -22,7 +22,7 @@ print(df)
 print(df['이름'])
 print(df['키'])
 
-# 두개 이상 가져올때는 대괄호 두개로 감싸기
+# 두개 이상 가져올때는 대괄호 두개로 감싸기1
 print(df[['이름','키']])
 
 #DataFrame 객체 생성 (Index 지정)
