@@ -18,7 +18,7 @@ df = pd.DataFrame(data)
 
 print(df)
 
-# 데이터 접근1
+# 데이터 접근11
 print(df['이름'])
 print(df['키'])
 
