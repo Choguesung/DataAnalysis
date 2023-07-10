@@ -18,7 +18,7 @@ df = pd.DataFrame(data)
 
 print(df)
 
-# 데이터 접근
+# 데이터 접근1q
 print(df['이름'])
 print(df['키'])
 
