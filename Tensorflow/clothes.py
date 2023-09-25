@@ -23,5 +23,5 @@ model.summary()
 model.compile(loss="sparse_categorical_crossentropy", optimizer="adam", metrics=['accuracy'])
 model.fit(trainX, trainY, validation_data=(testX,testY), epochs=5)
 
-score = model.evaluate(testX, testY) # 모델 평가 
+score = model.evaluate(testX, testY) # 모델 평가 하는코드 
 print(score)
