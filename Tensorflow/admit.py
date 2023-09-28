@@ -22,6 +22,6 @@ model.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
 
 model.fit(np.array(x데이터),np.array(y데이터), epochs=1000)
 
-예측값 = model.predict( [ [750,3.70,3],[400,2.2,2]])
+예측값 = model.predict( [ [750,3.20,3],[400,2.2,2]])
 
 print(예측값)
