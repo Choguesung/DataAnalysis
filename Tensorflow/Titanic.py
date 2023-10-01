@@ -62,7 +62,7 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(1, activation='sigmoid')
 ])
 
-# 모델 컴파일 및 학습
+# 모델 컴파일
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 # 데이터셋 배치 설정
@@ -70,3 +70,6 @@ ds_batch = ds.batch(32)
 
 # 모델 학습
 model.fit(ds_batch, shuffle=True, epochs=20)
+
+# 모델 저장
+model.save('my_model')
