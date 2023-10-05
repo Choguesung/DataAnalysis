@@ -65,7 +65,7 @@ model = tf.keras.Sequential([
 # 모델 컴파일
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-# 데이터셋 배치 설정
+# 데이터셋 배치 설정1
 ds_batch = ds.batch(32)
 
 # 모델 학습
