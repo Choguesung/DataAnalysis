@@ -29,5 +29,7 @@ model.fit( np.array(x_data), np.array(y_data), epochs=10000)
 예측값 = model.predict([ [750, 3.70 ,3], [400, 2.2 ,1]])
 print(예측값)
 
+
 model.save('admit2.h5')
 
+ 
